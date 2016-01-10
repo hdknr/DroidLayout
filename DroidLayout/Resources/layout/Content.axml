@@ -3,7 +3,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <TableLayout
         android:minWidth="25px"
         android:minHeight="25px"
@@ -13,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:id="@+id/PanelHeader">
-
         <TableRow
             android:id="@+id/TitleRow"
             android:background="#fffffde7">
@@ -31,34 +29,31 @@
                 android:gravity="center_horizontal" />
         </TableRow>
     </TableLayout>
-
     <TableLayout
         android:id="@+id/PanelBody"
         android:layout_gravity="center_vertical"
         android:layout_above="@+id/PanelFooter"
         android:layout_below="@+id/PanelHeader"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
-
+        android:layout_height="fill_parent">
         <TableRow
             android:id="@+id/MenuRow"
-            android:background="#000000">
-
-        <ListView xmlns:tools="http://schemas.android.com/tools"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:id="@+id/MenuList"
-            android:choiceMode="singleChoice"
-            tools:visibility="visible" />
+            android:background="#000000"
+            android:paddingTop="@android:dimen/app_icon_size"
+            android:paddingLeft="@android:dimen/app_icon_size">
+            <ListView xmlns:tools="http://schemas.android.com/tools"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/MenuList"
+                android:choiceMode="singleChoice"
+                tools:visibility="visible" />
         </TableRow>
     </TableLayout>
-
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_gravity="center"

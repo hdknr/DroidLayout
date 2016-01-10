@@ -28,6 +28,8 @@ RelativeLayout:
     TableRow:
       '@android:background': '#000000'
       '@android:id': '@+id/MenuRow'
+      '@android:paddingLeft': '@android:dimen/app_icon_size'
+      '@android:paddingTop': '@android:dimen/app_icon_size'
       ListView: {'@android:choiceMode': singleChoice, '@android:id': '@+id/MenuList',
         '@android:minHeight': 25px, '@android:minWidth': 25px, '@tools:visibility': visible,
         '@xmlns:tools': 'http://schemas.android.com/tools'}
