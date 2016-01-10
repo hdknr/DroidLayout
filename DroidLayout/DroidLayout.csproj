@@ -53,6 +53,7 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ContentActivity.cs" />
+    <Compile Include="SigninActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -70,6 +71,15 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Content.axml" />
     <AndroidResource Include="Resources\layout\MenuItem.axml" />
+    <AndroidResource Include="Resources\layout\Signin.axml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\drawable\edittext_top_bg.xml" />
+    <AndroidResource Include="Resources\drawable\email.png" />
+    <AndroidResource Include="Resources\drawable\edittext_default_bg.xml" />
+    <AndroidResource Include="Resources\drawable\edittext_bottom_bg.xml" />
+    <AndroidResource Include="Resources\drawable\password.png" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable\button_default_bg.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

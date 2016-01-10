@@ -32,7 +32,7 @@ namespace DroidLayout
 		protected void SetupMenu()
 		{
 			var menu = new List<string> {
-				"Menue1", "Menue2", "Menue3", "Menue4",
+				"Sign In", "Menue2", "Menue3", "Menue4",
 				"Menue5", "Menue6", "Menue7", "Menue8",
 			};
 
@@ -43,6 +43,15 @@ namespace DroidLayout
 				this, item_layout_id,
 				menu.Select (r => r).ToList<string> ()
 			);
+
+			MenuList.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => 
+			{
+				if( menu[e.Position] == "Sign In"){
+					StartActivity (
+						new Intent (this, typeof(SigninActivity))
+					);
+				}
+			};
 		}
 	}
 }
