@@ -2,6 +2,8 @@ using Android.App;
 using Android.Widget;
 using Android.OS;
 
+using Android.Content;	// Intent
+
 namespace DroidLayout
 {
 	[Activity (Label = "DroidLayout", MainLauncher = true, Icon = "@mipmap/icon")]
@@ -19,7 +21,10 @@ namespace DroidLayout
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
 			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
+//				button.Text = string.Format ("{0} clicks!", count++);
+				StartActivity (
+					new Intent (this, typeof(ContentActivity))
+				);
 			};
 		}
 	}
