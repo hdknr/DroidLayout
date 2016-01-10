@@ -57,7 +57,7 @@ namespace DroidLayout
 			public const int MenuList = 2131034118;
 			
 			// aapt resource value: 0x7f050005
-			public const int PanaleHeader = 2131034117;
+			public const int MenuRow = 2131034117;
 			
 			// aapt resource value: 0x7f050003
 			public const int PanelBody = 2131034115;
