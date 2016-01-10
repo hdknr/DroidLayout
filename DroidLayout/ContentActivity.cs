@@ -33,12 +33,14 @@ namespace DroidLayout
 		{
 			var menu = new List<string> {
 				"Menue1", "Menue2", "Menue3", "Menue4",
-				"Menue5", "Menue6", "Menue7", "Menue8", 
+				"Menue5", "Menue6", "Menue7", "Menue8",
 			};
 
+			//int item_layout_id = Android.Resource.Layout.SimpleListItemSingleChoice;
+			int item_layout_id = Resource.Layout.MenuItem;
+
 			MenuList.Adapter = new ArrayAdapter<string> (
-				this, 
-				Android.Resource.Layout.SimpleListItemSingleChoice, 
+				this, item_layout_id,
 				menu.Select (r => r).ToList<string> ()
 			);
 		}

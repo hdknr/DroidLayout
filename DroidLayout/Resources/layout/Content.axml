@@ -2,7 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp">
     <TableLayout
         android:minWidth="25px"
         android:minHeight="25px"
@@ -19,7 +23,7 @@
                 android:text="タイトル"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="25sp"
                 android:id="@+id/LineTitle"
                 android:background="#666666"
                 android:paddingTop="10dp"
@@ -29,26 +33,18 @@
                 android:gravity="center_horizontal" />
         </TableRow>
     </TableLayout>
-    <TableLayout
-        android:id="@+id/PanelBody"
-        android:layout_gravity="center_vertical"
+    <ListView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/MenuList"
         android:layout_above="@+id/PanelFooter"
         android:layout_below="@+id/PanelHeader"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        <TableRow
-            android:id="@+id/MenuRow"
-            android:background="#000000"
-            android:paddingTop="@android:dimen/app_icon_size"
-            android:paddingLeft="@android:dimen/app_icon_size">
-            <ListView xmlns:tools="http://schemas.android.com/tools"
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:id="@+id/MenuList"
-                android:choiceMode="singleChoice"
-                tools:visibility="visible" />
-        </TableRow>
-    </TableLayout>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="100dp"
+        android:choiceMode="singleChoice"
+        android:background="#ff1a237e"
+        android:textSize="40sp"
+        android:minWidth="100dp" />
+
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
