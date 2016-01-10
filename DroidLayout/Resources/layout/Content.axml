@@ -39,6 +39,7 @@
         android:layout_below="@+id/PanelHeader"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:listSelector="@android:color/darker_gray"
         android:minHeight="100dp"
         android:choiceMode="singleChoice"
         android:background="#ff1a237e"
