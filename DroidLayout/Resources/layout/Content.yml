@@ -1,0 +1,48 @@
+RelativeLayout:
+  '@android:layout_height': match_parent
+  '@android:layout_width': match_parent
+  '@android:orientation': vertical
+  '@xmlns:android': http://schemas.android.com/apk/res/android
+  RelativeLayout:
+    '@android:id': '@+id/PanelBody'
+    '@android:layout_above': '@+id/PanelFooter'
+    '@android:layout_below': '@+id/PanaleHeader'
+    '@android:layout_height': fill_parent
+    '@android:layout_width': fill_parent
+    '@android:orientation': vertical
+    ListView: {'@android:choiceMode': singleChoice, '@android:id': '@+id/MenuList',
+      '@android:layout_height': fill_parent, '@android:layout_width': fill_parent,
+      '@android:minHeight': 25px, '@android:minWidth': 25px, '@tools:visibility': visible,
+      '@xmlns:tools': 'http://schemas.android.com/tools'}
+  TableLayout:
+  - '@android:id': '@+id/PanelHeader'
+    '@android:layout_alignParentLeft': 'true'
+    '@android:layout_alignParentTop': 'true'
+    '@android:layout_gravity': center_vertical
+    '@android:layout_height': wrap_content
+    '@android:layout_width': fill_parent
+    '@android:minHeight': 25px
+    '@android:minWidth': 25px
+    TableRow:
+      '@android:background': '#fffffde7'
+      '@android:id': '@+id/TitleRow'
+      TextView: {'@android:background': '#666666', '@android:gravity': center_horizontal,
+        '@android:id': '@+id/LineTitle', '@android:layout_height': wrap_content, '@android:layout_weight': '0.85',
+        '@android:layout_width': match_parent, '@android:paddingBottom': 10dp, '@android:paddingTop': 10dp,
+        '@android:text': タイトル, '@android:textSize': 15sp, '@android:width': 0dp}
+  - '@android:id': '@+id/PanelFooter'
+    '@android:layout_alignParentBottom': 'true'
+    '@android:layout_alignParentRight': 'true'
+    '@android:layout_gravity': center
+    '@android:layout_height': wrap_content
+    '@android:layout_width': fill_parent
+    '@android:minHeight': 25px
+    '@android:minWidth': 25px
+    TableRow:
+      '@android:id': '@+id/ButtonRow'
+      Button: {'@android:background': '#666666', '@android:gravity': center_horizontal,
+        '@android:id': '@+id/CloseButton', '@android:layout_height': wrap_content,
+        '@android:layout_weight': '0.85', '@android:layout_width': match_parent, '@android:paddingBottom': 10dp,
+        '@android:paddingTop': 10dp, '@android:text': Close, '@android:textSize': 15sp,
+        '@android:width': 0dp}
+
