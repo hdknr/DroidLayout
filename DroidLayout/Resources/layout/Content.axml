@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/PanelHeader">
+        <TableRow
+            android:id="@+id/TitleRow"
+            android:background="#fffffde7">
+            <TextView
+                android:text="タイトル"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/LineTitle"
+                android:background="#666666"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:width="0dp"
+                android:layout_weight="0.85"
+                android:gravity="center_horizontal" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/PanelBody"
+        android:layout_above="@+id/PanelFooter"
+        android:layout_below="@+id/PanaleHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ListView xmlns:tools="http://schemas.android.com/tools"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/MenuList"
+            android:choiceMode="singleChoice"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_gravity="center"
+        android:id="@+id/PanelFooter">
+        <TableRow
+            android:id="@+id/ButtonRow">
+            <Button
+                android:text="Close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/CloseButton"
+                android:background="#666666"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:width="0dp"
+                android:layout_weight="0.85"
+                android:gravity="center_horizontal" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
