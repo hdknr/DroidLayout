@@ -67,7 +67,7 @@ namespace DroidLayout
 
 					var button = new Button (this) {
 						Text=$"{i}-{j}",
-						Background=Android.Graphics.Color.Blue.ToDrawable()
+						Background=Android.Graphics.Color.Blue.ToButtonPressEffect()
 					};
 					row.AddView (button, buttonlayout);
 				}						
