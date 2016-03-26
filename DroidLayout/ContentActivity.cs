@@ -33,6 +33,7 @@ namespace DroidLayout
 		{
 			var menuitem = new Dictionary<string, Intent> {
 				{"Sign In", new Intent(this, typeof(SigninActivity))},
+				{"Buttons In Table", new Intent(this, typeof(ButtonTable))},
 			};
 			int item_layout_id = Resource.Layout.MenuItem;
 
@@ -45,7 +46,6 @@ namespace DroidLayout
 			{
 				var key = MenuList.Adapter.GetItem(e.Position).ToString();
 				StartActivity( menuitem[key]);
-
 			};
 		}
 	}

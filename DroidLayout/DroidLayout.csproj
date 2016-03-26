@@ -54,6 +54,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ContentActivity.cs" />
     <Compile Include="SigninActivity.cs" />
+    <Compile Include="ButtonTable.cs" />
+    <Compile Include="LayoutExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
