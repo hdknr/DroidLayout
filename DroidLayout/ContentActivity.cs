@@ -31,26 +31,21 @@ namespace DroidLayout
 
 		protected void SetupMenu()
 		{
-			var menu = new List<string> {
-				"Sign In", "Menue2", "Menue3", "Menue4",
-				"Menue5", "Menue6", "Menue7", "Menue8",
+			var menuitem = new Dictionary<string, Intent> {
+				{"Sign In", new Intent(this, typeof(SigninActivity))},
 			};
-
-			//int item_layout_id = Android.Resource.Layout.SimpleListItemSingleChoice;
 			int item_layout_id = Resource.Layout.MenuItem;
 
 			MenuList.Adapter = new ArrayAdapter<string> (
 				this, item_layout_id,
-				menu.Select (r => r).ToList<string> ()
+				menuitem.Select (r => r.Key).ToList<string> ()
 			);
 
 			MenuList.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => 
 			{
-				if( menu[e.Position] == "Sign In"){
-					StartActivity (
-						new Intent (this, typeof(SigninActivity))
-					);
-				}
+				var key = MenuList.Adapter.GetItem(e.Position).ToString();
+				StartActivity( menuitem[key]);
+
 			};
 		}
 	}
